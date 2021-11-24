@@ -1,9 +1,8 @@
 name: Automerge PR
 
 on:
-  push:
-    branches-ignore:
-      - master
+  pull_request:
+    types: [opened, synchronize, reopened]
 
 jobs:
   set-auto-merge:
@@ -14,6 +13,5 @@ jobs:
 
       - name: Set to automerge
         uses: heitorpolidoro/auto-merge@master
-        with:
-          personal_access_token: ${{ secrets.PAT }}
-          allowed_users: heitorpolidoro
+        env:
+          heitorpolidoro: ${{ secrets.HEITORPOLIDORO_PAT }}
