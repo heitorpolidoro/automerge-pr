@@ -4,14 +4,16 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
 
+
 jobs:
   set-auto-merge:
+    name: Set Pull Request do Automerge
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
 
-      - name: Set to automerge
-        uses: heitorpolidoro/auto-merge@master
+      - name: Setting to Automerge
+        uses: heitorpolidoro/automerge-pr@master
         env:
           heitorpolidoro: ${{ secrets.HEITORPOLIDORO_PAT }}
