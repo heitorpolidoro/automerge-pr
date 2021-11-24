@@ -12,8 +12,6 @@ else
     echo "$token" | gh auth login --with-token
     gh auth status
   echo "::endgroup::"
-env
-git checkout "$GITHUB_HEAD_REF"
 git status
   echo "::group::Configuring to auto merge"
     gh pr merge --auto --squash
