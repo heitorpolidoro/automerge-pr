@@ -13,6 +13,7 @@ else
     gh auth status
   echo "::endgroup::"
 env
+git checkout "$GITHUB_HEAD_REF"
 git status
   echo "::group::Configuring to auto merge"
     gh pr merge --auto --squash
