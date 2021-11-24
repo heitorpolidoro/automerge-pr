@@ -7,7 +7,7 @@ token=$(eval echo "\$$GITHUB_ACTOR")
 echo "#$token#"
 if [[ -z "$token" ]]
 then
-  echo -e "User $BOLD$GITHUB_ACTOR$NORMAL is not allowed to auto-release"
+  echo -e "User $BOLD$GITHUB_ACTOR$NORMAL is not allowed to auto merge"
 else
   echo "::group::GitHub authentication"
     echo "$token" | gh auth login --with-token
