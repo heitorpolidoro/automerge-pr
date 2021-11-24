@@ -4,6 +4,7 @@ NORMAL="\x1b[0m"
 
 set -e
 token=$(eval echo "\$$GITHUB_ACTOR")
+echo "#$token#"
 if [[ -z "$token" ]]
 then
   echo -e "User $BOLD$GITHUB_ACTOR$NORMAL is not allowed to auto-release"
