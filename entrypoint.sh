@@ -10,8 +10,10 @@ then
 else
   echo "::group::GitHub authentication"
     echo "$token" | gh auth login --with-token
+    gh auth status
   echo "::endgroup::"
-
+env
+git status
   echo "::group::Configuring to auto merge"
     gh pr merge --auto --squash
   echo "::endgroup::"
