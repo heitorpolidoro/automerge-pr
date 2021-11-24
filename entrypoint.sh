@@ -13,6 +13,6 @@ else
   echo "::endgroup::"
 
   echo "::group::Configuring to auto merge"
-    gh pr merge --auto
+    gh pr merge --auto --squash
   echo "::endgroup::"
 fi
