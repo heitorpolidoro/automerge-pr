@@ -2,7 +2,7 @@ name: Automerge PR
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened]
+    types: [opened, reopened]
 
 
 jobs:
@@ -16,6 +16,6 @@ jobs:
           ref: ${{ github.head_ref }}
 
       - name: Setting to Automerge
-        uses: heitorpolidoro/automerge-pr@autocreate-pr
+        uses: heitorpolidoro/automerge-pr@master
         env:
           heitorpolidoro: ${{ secrets.HEITORPOLIDORO_PAT }}
