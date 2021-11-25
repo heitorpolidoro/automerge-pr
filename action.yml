@@ -5,15 +5,6 @@ branding:
   color: yellow
   icon: git-pull-request
 
-inputs:
-  personal_access_token:
-    description: "Github Personal access token"
-    required: true
-
-  allowed_users:
-    description: "Allowed users to generate auto release"
-    required: false
-
 runs:
   using: "docker"
   image: "Dockerfile"
