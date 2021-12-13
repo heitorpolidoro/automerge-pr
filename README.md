@@ -1,8 +1,10 @@
 # Autocreate Pull Request
-
+![GitHub last commit](https://img.shields.io/github/last-commit/heitorpolidoro/automerge-pr)
+[![Create GitHub Release](https://github.com/heitorpolidoro/automerge-pr/actions/workflows/auto-release.yml/badge.svg)](https://github.com/heitorpolidoro/automerge-pr/actions/workflows/auto-release.yml)
 
 [![Latest](https://img.shields.io/github/release/heitorpolidoro/automerge-pr.svg?label=latest)](https://github.com/heitorpolidoro/automerge-pr/releases/latest)
 ![GitHub Release Date](https://img.shields.io/github/release-date/heitorpolidoro/automerge-pr)
+
 ![GitHub](https://img.shields.io/github/license/heitorpolidoro/automerge-pr)
 
 Action to create a pull request automatically.
