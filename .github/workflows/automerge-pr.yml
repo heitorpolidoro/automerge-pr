@@ -19,4 +19,4 @@ jobs:
       - name: Setting to Automerge
         uses: heitorpolidoro/automerge-pr@master
         env:
-          heitorpolidoro: ${{ secrets.HEITORPOLIDORO_PAT }}
+          heitrpolidoro: ${{ secrets.HEITORPOLIDORO_PAT }}
