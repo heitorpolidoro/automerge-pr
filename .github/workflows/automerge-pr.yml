@@ -2,7 +2,7 @@ name: Automerge Pull Request
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened]
+    types: [opened, reopened]
 
 
 jobs:
@@ -17,8 +17,8 @@ jobs:
           ref: ${{ github.head_ref }}
 
       - name: Setting to Automerge
-        uses: heitorpolidoro/automerge-pr@fail_if_not_enable
+        uses: heitorpolidoro/automerge-pr@v1
         with:
           fails_if_not_enabled: true
         env:
-          heitrpolidoro: ${{ secrets.HEITORPOLIDORO_PAT }}
+          heitorpolidoro: ${{ secrets.HEITORPOLIDORO_PAT }}
