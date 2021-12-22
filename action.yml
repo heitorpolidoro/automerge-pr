@@ -5,6 +5,12 @@ branding:
   color: yellow
   icon: git-pull-request
 
+inputs:
+  fails_if_not_enabled:
+    description: "Fails the run if the user is not enabled do set to auto merge"
+    required: false
+    default: false
+
 runs:
   using: "docker"
   image: "Dockerfile"

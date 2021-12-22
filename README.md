@@ -34,4 +34,5 @@ jobs:
         env:
           <user>: ${{ secrets.<USER_PERSONAL_ACCESS_TOKEN> }}
 ```
-To enable a user to automatically creates a Pull Request set an `ENV` with the GitHub username passing the user Personal Access Token
+To en#### Optional parameters
+- `fails_if_not_enabled`: Fails the run if the user is not enabled do set to auto merge
