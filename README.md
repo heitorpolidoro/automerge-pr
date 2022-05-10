@@ -8,6 +8,8 @@
 
 Set a Pull Request to Auto merge.
 
+[Automatically merging a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/automatically-merging-a-pull-request)
+
 ### Usage
 ```yaml
 name: Automerge Pull Request
